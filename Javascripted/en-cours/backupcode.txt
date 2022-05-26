@@ -1,0 +1,117 @@
+----------------------------- Exemple fonction -----------------------------
+
+let prenom ="Jean";
+
+function affpre(){
+    let prenom="tex";
+    console.log(prenom);
+}
+affpre();
+console.log(prenom);
+
+----------------------------- Eviter les erreurs -----------------------------
+
+try{
+    let resultat = calcul(2.5,8);
+    console(resultat);
+}
+catch(e){
+    console.log(e);
+}
+
+----------------------------- JSON, entrainement -----------------------------
+
+let societe = {
+    "nom":"Google",
+    "SS":[{"pays":"United States","departement":"California","lieu":"Mountain View","emplacement":"Googleplex"}],
+    "fondateurs":[{"genre":"M","nom":"Larry","ddn":"26/03/1973","lieudeN":"East Lansing"},{"genre":"M","nom":"Sergey","ddn":"21/08/1973","lieudeN":"Moscou"}],
+    "ca":[{"annee":"2008","chiffre":"16.49"},{"annee":"2012","chiffre":"37.97"},{"annee":"2016","chiffre":"89.46"},{"annee":"2018","chiffre":"136.2"}]
+};
+
+console.log(societe);
+console.log("");
+/* --- Boucle pour afficher le chiffre d'affaire --- */
+
+/*solution 1*/
+for (let i = 0; i < societe.ca.length-1; i++){
+    console.log(societe.ca[i]);
+};
+console.log("");
+
+/*solution 2*/
+societe.ca.forEach(ca=>{console.log(ca.annee)});
+societe.ca.forEach(ca=>{console.log(ca.chiffre)});
+
+societe.ca.forEach(ca=>{console.log("En " + ca.annee + " il y a eu " + ca.chiffre + " Milliards de chiffre d'affaire")});
+
+console.log("");
+
+
+/* --- --- --- --- */
+societe.fondateurs.forEach(fondateurs=>{console.log(fondateurs)});
+console.log("");
+societe.fondateurs.forEach(fondateurs=>{console.log(fondateurs.genre + "." + fondateurs.nom + " est né le " + fondateurs.ddn + " à " + fondateurs.lieudeN)});
+
+console.log("");
+societe.SS.forEach(element=>{console.log(element)});
+console.log("");
+
+----------------------------- Date -----------------------------
+
+let auj = new Date();
+let ann = new Date(2018, 0, 22);
+let ann2 = new Date(2018, 11, 22, 18, 25);
+
+console.log(auj);
+console.log(ann);
+console.log(ann2);
+
+console.log(auj.getMonth()+1);
+
+
+let date1 = new Date()
+
+/-/-/-/-/-/-/-/-/-/-/-/-/-/ DOM /-/-/-/-/-/-/-/-/-/-/-/-/-/ 
+
+/* Mettre du texte après le paragrape ".corde" en disant "bonjour" */
+const text2 = document.createTextNode('bonjour');
+const linkPara2 = document.querySelector('.corde');
+linkPara2.appendChild(text2);
+
+
+/* Remplace le paragraphe ".corde" par "bonjour" */
+const linkPara3 = document.querySelector('.corde');
+linkPara3.textContent="bonjour"
+
+|||||||||||||||||||| Exemple -> 
+
+
+const link = document.querySelector('a');
+link.textContent = 'Mozilla Developer Network';
+link.href = 'https://google.com';
+
+
+
+const link1 = document.querySelector('#f');
+link1.href = 'https://google.com'
+
+
+
+const sect = document.querySelector('section');
+
+
+const para = document.createElement('p');
+para.textContent = 'We hope you enjoyed the ride.';
+sect.appendChild(para);
+
+
+
+const text = document.createTextNode(' — the premier source for web development knowledge.');
+const linkPara = document.querySelector('p');
+linkPara.appendChild(text);
+
+
+/-/-/-/-/-/-/-/-/-/-/-/-/-/ /-/-/-/-/-/-/-/-/-/-/-/-/-/ 
+
+
+

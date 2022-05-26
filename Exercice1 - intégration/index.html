@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site exercice</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+</head>
+
+<body>
+
+    <div class="hdp">
+        <!-- Haut de page -->
+        <div class="logo"><img src="img/cinemax.webp" height="50px"></div>
+        <div class="menu">Menu</div>
+
+    </div>
+    <!-- Section 1 -> Image de font et slogan -->
+    <section class="sec1">
+        <div class="titresection">
+            <h2 style="color: white;" id="Section1">Section 1</h2>
+        </div>
+        <div class="slogan">
+            <h3 class="tslogan">Follow Us On Cinemax.</h3>
+        </div>
+        <!-- <div class="Dsec1">img de fond + slogan</div> -->
+        <!-- <div class="imgsec1"><img src="img/cinemax.webp" height="300px"></div> -->
+    </section>
+
+
+    <!--Section 2 -> films à l'affiche et description -->
+    <section class="sec2">
+        <div class="titresection">
+            <h2 id="Section2">Section 2</h2>
+        </div>
+
+        <div class="Dsec2">
+            <div class="titrefilm">
+                <h3>Les films à l'affiche</h3>
+            </div>
+            <div class="lfilm">
+                <img src="/img/alien.webp">
+                <img src="/img/drstrange.webp">
+                <img src="/img/the100.webp">
+            </div>
+            <div class="desc">
+                <h3>Description</h3>
+                
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Section 3 infos pratique -> avantage cinéma et tarif -->
+    <section class="sec3">
+        <div class="titresection">
+            <h2 id="Section3">Section 3 - Infos pratiques</h2>
+        </div>
+        <div class="Dsec3">
+            <div class="ac3">
+                <ul>
+
+                </ul>
+                <ul>
+                    <li>
+                        <h3>Avantage cinéma</h3>
+                    </li>
+                    <li class="espace">• Salle climatisée</li>
+                    <li class="espace">• Toutes les salles en IMAX</li>
+                    <li class="espace">• Son Digital Prologic Surround</li>
+                </ul>
+            </div>
+            <div class="Btbl">
+                <table class="tbl">
+                    <tr>
+                        <th rowspan="2"></th>
+                        <th colspan="2">Lundi au vendredi</th>
+                        <th rowspan="2">Weekend</th>
+                    </tr>
+                    <tr>
+                        <th>9h - 18h</th>
+                        <th>soirée</th>
+                    </tr>
+                    <tr>
+                        <td>- 14 ans</td>
+                        <td>5€</td>
+                        <td>6€</td>
+                        <td>6€</td>
+                    </tr>
+                    <tr>
+                        <td>plein tarif</td>
+                        <td>10€</td>
+                        <td>12€</td>
+                        <td>12,50€</td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Section -> emplacement google et complément d'adresse -->
+    <section class="sec4">
+
+        <!--<div class="Dsec4">-->
+        <!-- ANCIEN FORMATAGE -->
+
+        <div class="titresection">
+            <h2 id="Section4">Section 4</h2>
+        </div>
+        </div>
+        <div class="modificationsection4">
+            <div class="googlemap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1487.5843588521423!2d3.9457994642853245!3d43.575894056504836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6ac29a1ed0e77%3A0x12bff7420e0ee1bd!2sDiginamic%20Montpellier!5e0!3m2!1sfr!2sfr!4v1653297984077!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="addrs">
+                <ul>
+                    <li>
+                        <h3>Contact</h3>
+                    </li>
+                    <li>🏠 Parc Méditérannée, 40 Rue Louis Lépine, 34470 Pérols</li>
+                    <li>🌐 http://www.diginamic.fr/</li>
+                    <li>📞 04 34 48 00 25</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="sec5">
+        <h2 id="Section5">Section 5</h2>
+        <div class="Dsec5">
+            <form id="contact" action="">
+                <!-- Exemple select
+                <select name="salut" id="salut"> 
+                    <option value="">--Choisissez--</option>
+                    <option value="Mme">Mme</option>
+                    <option value="Mr">Mr</option>
+                </select>
+                -->
+                <div class="block50">
+
+                    <div>
+                        <!--Mettre son nom-->
+                        <input type="text" placeholder="Nom" name="nom" id="nom" minlength="2" aria-placeholder="nom" style="width:45%">
+                        <!--Mettre son prénom-->
+                        <input type="text" placeholder="Prénom" name="prenom" id="prenom" minlength="2" aria-placeholder="prenom" style="width:45%;">
+                    </div>
+
+                    <div>
+                        <!--Mettre son email-->
+                        <input type="text" placeholder="Email" name="mail" id="mail" style="width:45%;">
+                        <!--Mettre son téléphone-->
+                        <input type="text" placeholder="Téléphone" name="tel" id="tel" minlength="10" maxlength="10" aria-placeholder="tel" style="width:45%;">
+                    </div>
+
+                    <div>
+                        <!--Mettre son sujet-->
+                        <input type="text" placeholder="Sujet" name="suj" id="suj" minlength="2" aria-placeholder="suj" style="width:93%;">
+                    </div>
+
+                    <div>
+                        <!--Mettre son message-->
+                        <input type="text" placeholder="Message" name="message" id="message" style="width:93%; height: 100px;">
+                    </div>
+                    <div class="bouton">
+                    <button type="submit" style="width:50%">Envoyer</button>
+                </div>
+                </div>
+            </form>
+
+        </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="footer">
+        <footer>
+            <h2>Pied de page</h2>
+            <div class="pieddepage">
+                <p>News letter et réseaux sociaux</p>
+            </div>
+        </footer>
+    </section>
+    <div class="copy">Copyright by Candy ©️</div>
+
+</body>
+
+</html>

@@ -1,0 +1,354 @@
+h2 /* modification des titre des sections */ 
+{
+    margin-top: 0px; /* supprime l'espace entre les sections */
+    padding: 2%; /* ajoute de l'espace entre le titre de la section et la section */ 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.hdp /*haut de page */ 
+{
+    display: flex;
+    background-color: #0011ff;
+    justify-content: space-around;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+}
+
+.sticky {
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:9990;
+    }
+
+
+
+.logo /* logo site */ 
+{
+    display: flex;
+}
+
+.menu /*menu site */
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 250%;
+    font-weight : bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Déplacé dans le -> h2
+.titresection
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+*/
+
+
+
+
+.sec1 /* section 1 > image de fond et slogan */
+{
+    background-image: url(img/fond.webp);
+    min-height: 800px;
+}
+
+/*  Modification emplacement du slogan */
+.slogan
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+ 
+}
+
+/* Modification du fond */
+.tslogan
+{
+    background-color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+/* Fait un contour au slogan */
+.tslogan:hover 
+{
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
+    font-weight : bolder;
+}
+
+
+/* Supprimé temporairement (ou pas)  -> image à la place du logo 
+.imgsec1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+*/
+
+
+.Dsec1 /* div de la section 1 */ 
+{
+    text-align: center;
+}
+
+
+
+
+
+
+.sec2 /* section 2 > film à l'affiche */ 
+{
+    background-color: #16A3AB;
+}
+
+
+.Dsec2 /* division de la section 2 */
+{
+    display: flex;
+    padding-bottom: 3%;
+    flex-direction: column;
+}
+
+
+.titrefilm
+{
+    margin-left: 10%;
+}
+
+
+
+.film /* titre de la liste des films */ 
+{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin: 2%;
+
+
+}
+
+
+.lfilm /* liste des films > mettre les images */ 
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lfilm img
+{
+    width: 20%;
+    object-fit: cover;
+    padding: 2%;
+}
+
+/*
+.ftaille 
+{
+    height: 30%;
+}
+*/
+
+.desc /* description des films à l'affiche */ 
+{
+    margin-left: 10%;
+}
+
+
+
+
+
+.sec3 /* section 3 */ 
+{
+    background-color: #21f4ff;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.Dsec3 /* division de la section 3 */ 
+{
+    display: flex;
+    /* background-color: red; -> color test */ 
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+
+.ac3 /* div -> avantage cinema */ 
+{
+    /* background-color: blue; -> color test */
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+li /* Supprime l'affichage du point dans les liste */ 
+{
+    list-style-type: none;
+}
+
+.espace /* met un espace dans la liste à puce */ 
+{
+    padding-left: 15px;
+}
+
+.Btbl /* Bloc tableau */ 
+{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    /* background-color: green; -> color test */ 
+}
+
+
+.tbl 
+{   
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 35%;
+}
+
+td
+{
+    padding: 20px;
+}
+
+
+
+
+
+.sec4 /* section 4 */
+{
+    background-color: #048389;
+    padding-bottom: 4%;
+}
+
+.Dsec4 /* division de la section 4 */ 
+{
+    display: flex;
+
+}
+
+
+.modificationsection4 /* bloc de map et contact */ 
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.googlemap 
+{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+
+.addrs
+{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+.sec5 /* section 5 -> formulaire de contact */
+{
+    background-color: #8ff8fe;
+    width: 100%;
+    padding-bottom: 4%;
+}
+
+.Dsec5 /* division section 5 */ 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.block50 
+{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.block50 div
+{
+    margin: 1%;
+}
+
+.bouton
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.footer
+{
+    background-color: #0f5357;
+    margin-top: 0px;
+}
+
+
+.pieddepage
+{
+    display: flex;
+}
+
+.pdpage
+{
+    display: flex;
+}
+
+
+.copy
+{
+    display: flex;
+}
+
+
+@media all and (max-width:760px) /* Responsive */
+{
+    .container{
+        flex-direction: column;
+    }
+    h1
+    {
+        font-size: 100%;
+    }
+    h2
+    {
+        font-size: 100%;
+    }
+    h3
+    {
+        font-size: 75%;
+    }
+}
