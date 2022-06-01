@@ -23,13 +23,21 @@ button.addEventListener('click', () => {  Fait en sorte que le 'bouton' réagis 
     input.focus();  Permet de remettre le curseur dans le 'input' (la boite) 
 });
 */ 
+
+
 const touche = document.querySelector('button');
-const rescalc = document.querySelector('.resultat')
-
-const resu = document.createElement('div');
-
-resu = 'salut';
+const rescalc = document.querySelector('.resultat');
+const effacer = document.querySelector('input');
 
 
 
+touche.addEventListener('clic', () => {
+    const nombre = input.value;
+    input.value ='';
+})
+
+
+effacer.addEventListener('click', () => {
+    rescalc.textContent = '';
+})
 

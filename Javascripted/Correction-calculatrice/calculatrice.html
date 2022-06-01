@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculatrice</title>
+</head>
+
+<body>
+    <h1>Calculatrice</h1>
+    <div class="container w-50 bg-dark text-center" id="calculatrice">
+        <div class="row p-1">
+            <div class="col">
+                <input class="w-100" type="text" name="display" id="display" disabled>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-secondary"  onclick="addValue(7)">7</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary"  onclick="addValue(8)">8</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary"  onclick="addValue(9)">9</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" onclick="addValue('X')">X</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-secondary" onclick="addValue(4)">4</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" onclick="addValue(5)">5</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" onclick="addValue(6)">6</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" onclick="addValue('-')">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-secondary" onclick="addValue(1)">1</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" onclick="addValue(2)">2</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" onclick="addValue(3)">3</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" onclick="addValue('+')">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-secondary" onclick="addValue(0)">0</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary" onclick="addValue(',')">,</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-lg btn-success" onclick="addValue('=')">=</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        let buffer;
+        let operator;
+
+        function addValue(n){
+            switch (n)
+            {
+                case '+': 
+                    buffer = document.querySelector("input").value;
+                    document.querySelector("input").value ='';
+                    operator = '+';
+                    break;
+
+                case '-': 
+                    buffer = document.querySelector("input").value;
+                    document.querySelector("input").value ='';
+                    operator = '-';
+                    break;
+                
+                case '/': 
+                    buffer = document.querySelector("input").value;
+                    document.querySelector("input").value ='';
+                    operator = '/';
+                    break;
+                
+                case 'X': 
+                    buffer = document.querySelector("input").value;
+                    document.querySelector("input").value ='';
+                    operator = 'X';
+                    break;
+                
+                case '=':
+                    let input = document.querySelector("input");
+                    let val1 = parseFloat(buffer);
+                    let val2 = parseFloat(input.value);
+                    console.log(val1);
+                    console.log(operator);
+                    console.log(val2);
+                    input.value = calculate(val1,operator,val2);
+                    break;
+
+                default:
+                    document.querySelector("input").value = document.querySelector("input").value + n;
+                    break;
+            }
+        }
+
+
+        function calculate(n1, o, n2)
+        {
+            switch (o)
+            {
+                case '+':
+                    return n1+n2;
+                    break;
+                case '-':
+                    return n1-n2;
+                    break;
+                case '/':
+                    return n1/n2;
+                    break;
+                case 'X':
+                    return n1*n2;
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

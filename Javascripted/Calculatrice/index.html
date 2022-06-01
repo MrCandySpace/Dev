@@ -11,47 +11,43 @@
 
 <body>
 
-  <h1>Calculatrice</h1>
+  <h1>Ceci ne peut pas faire de calcul</h1>
 
   <div id="calculator">
     <div id="screen"></div>
 
     <table>
       <tr>
-        <td><button type="button">CE</button></td>
-        <td><button type="button">←</button></td>
-        <td><button type="button" title="modulo">%</button></td>
-        <td><button type="button">+</button></td>
+        <td colspan="3"><input id="sortie"></td> <!-- Met le tableau pour afficher le calcul -->
+        <td> <button onclick="effacer()" class="supp">c</button></td> <!-- Crée un bouton lié a la fonction 'effacer()' implémenté dans le js -->
       </tr>
+      
 
-      <tr>
-        <td><button type="button">7</button></td>
-        <td><button type="button">8</button></td>
-        <td><button type="button">9</button></td>
-        <td><button type="button">-</button></td>
-      </tr>
+<button type="button">CE</button>
+<button type="button">←</button>
+<button type="button" title="modulo">%</button>
+<button type="button">+</button>
+<button type="button">7</button>
+<button type="button">8</button>
+<button type="button">9</button>
+<button type="button">-</button>
+<button type="button">4</button>
+<button type="button">5</button>
+<button type="button">6</button>
+<button type="button">x</button>
+<button type="button">1</button>
+<button type="button">2</button>
+<button type="button">3</button>
+<button type="button">÷</button>
+<button type="button">0</button>
+<button type="button">±</button>
+<button type="button">,</button>
+<button type="button">=</button>
 
-      <tr>
-        <td><button type="button">4</button></td>
-        <td><button type="button">5</button></td>
-        <td><button type="button">6</button></td>
-        <td><button type="button">x</button></td>
-      </tr>
 
-      <tr>
-        <td><button type="button">1</button></td>
-        <td><button type="button">2</button></td>
-        <td><button type="button">3</button></td>
-        <td><button type="button">÷</button></td>
-      </tr>
-
-      <tr>
-        <td><button type="button">0</button></td>
-        <td><button type="button">±</button></td>
-        <td><button type="button">,</button></td>
-        <td><button type="button">=</button></td>
-      </tr>
       <div class="resultat"></div>
+
+
     </table>
   </div>
 
