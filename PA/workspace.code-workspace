@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "..\\Diginamic code"
+		},
+		{
+			"path": "..\\Bootstraped"
+		},
+		{
+			"path": "..\\Javascripted"
+		},
+		{
+			"path": "..\\Exercice1 - intégration"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Portfolio"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Javascripted"
+	}
+}

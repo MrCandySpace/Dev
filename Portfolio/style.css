@@ -1,0 +1,162 @@
+body {
+    cursor: url(img/icons8-cable-40.png) 4 12, auto; /* Change l'icone du curseur */
+
+    background-image: url(img/4253345.png);
+    background-position: center;
+}
+
+/* ---------------- -> Menu collé à la page ---------------- */
+
+.menu {
+    display: flex;
+    background-color: #a4aaff; /* Au cas où l'image ne marche pas */
+    justify-content: space-around; /* Fait en sorte d'eloigner les element */
+    align-items: center; /* Met le texte au centre verticalement parlant */
+    width: 100%; /* Pour que le menu prenne toute la lareur du site  */
+    height: 70px; /* Hauteur du menu */
+    position: fixed; /* Pour faire marcher le mode 'stiky' */
+    /* --- Image de fond du menu --- */
+    background-image: url(img/1024509.jpg); /* Image de fond */
+    background-repeat: no-repeat; /* pour evité qu'elle se repète (pas utilile pour ce code) */
+    background-position: center; /* pour centré l'image (à fin de pas avoir juste un bout mais le milieu */
+}
+
+.bouttonmenu {
+    cursor: wait; /* Fait en sorte que le curseur soit en mode "bug" */
+}
+
+.sticky /* Fait en sorte que le menu soit 'stiky' */
+    {
+    position: fixed;
+    z-index: 9990;
+}
+
+
+
+
+/* ---------------- BLOCK 0 -> Modification commune  ---------------- */
+h1 { /* titre du menu */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* changement de la police */
+    color: #0175CF; /* changement de la couleur du texte */
+    text-shadow: 2px 1px 1px #0A5CA6; /* ajoute une ombre */
+}
+
+.space /* ajoute une espace entre le premier block et le haut de la page -> essentiel à cause du menu stiky */
+    {
+    height: 75px;
+}
+
+#block
+{
+    display: flex;
+    margin: 5px; /* Met une marge extérieur de 5 pixel */
+    flex-direction: column; /* Fait en sorte que les images soient alligné horizontalement */
+    background-color: rgba(155, 155, 155, 0.403); /* Met une couleur de fond */ 
+}
+
+#block:hover
+{
+    background-color: rgba(155, 155, 155, 0.671); 
+    transition: 0.5s;
+}
+
+.titreH2 { /* Modification des titres situé dans les blocks */ 
+    text-align: center; /* Met les titres balisé au centre */
+
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.4px;
+    word-spacing: -2px;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: underline solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+h3
+{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 30px;
+    letter-spacing: 0.4px;
+    word-spacing: -2px;
+    color: #000000;
+    font-weight: 300;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}
+
+/* ---------------- BLOCK 1 -> Présentation ---------------- */
+.pdp 
+{
+    width: 200px;
+}
+
+/* ---------------- BLOCK 2 -> Compétences ---------------- */
+.c
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#block-compt
+{
+    display: flex;
+    /* background-color: rgba(255, 255, 255, 0.244); */
+    width: 25%;
+    align-items: center;
+    flex-direction: column;
+}
+
+#block-compt img
+{
+    height: 100px;
+}
+
+#block-desc
+{
+    width: 25%;
+}
+
+#block-desc ul
+{
+    align-items: center;
+}
+
+/* ---------------- BLOCK 3 -> Compétences ---------------- */
+.block3
+{
+    display: flex;
+    width: 100%;
+}
+.block-exp
+{
+    display: flex;
+    /* background-color: rgba(255, 255, 255, 0.244); */
+    width: 50%;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ---------------- BLOCK 4 -> Réseaux  ---------------- */
+
+.sn img /*Social Network (réseaux sociaux) modification des images */
+{
+    height: 100px;
+}
+
+
+.sn div /* Modification des listes de lien */
+{
+    display: flex;
+    /* width: 100%;  Fait en sorte que la division balisé par 'lien' prenne toute la place horizontalement */
+    justify-content: space-around; /* Fait en sorte que les elément dans la division soit dispaché sur la division */
+}
+
+.sn-cat
+{
+    flex-direction: column;
+    text-align: center;
+}

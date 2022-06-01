@@ -1,0 +1,113 @@
+body {
+    cursor: url(/img/icons8-moustache-impériale-40.png) 4 12, auto; /* Met le curseur du site en moustache */
+}
+
+/* ---------------- -> Menu collé à la page ---------------- */
+
+.menu {
+    display: flex;
+    background-color: #a4aaff; /* Au cas où l'image ne marche pas */
+    justify-content: space-around; /* Fait en sorte d'eloigner les element */
+    align-items: center; /* Met le texte au centre verticalement parlant */
+    width: 100%; /* Pour que le menu prenne toute la lareur du site  */
+    height: 70px; /* Hauteur du menu */
+    position: fixed; /* Pour faire marcher le mode 'stiky' */
+    /* --- Image de fond du menu --- */
+    background-image: url(/img/1024509.jpg); /* Image de fond */
+    background-repeat: no-repeat; /* pour evité qu'elle se repète (pas utilile pour ce code) */
+    background-position: center; /* pour centré l'image (à fin de pas avoir juste un bout mais le milieu */
+}
+
+.bouttonmenu {
+    cursor: wait; /* Fait en sorte que le curseur soit en mode "bug" */
+}
+
+.sticky /* Fait en sorte que le menu soit 'stiky' */
+    {
+    position: fixed;
+    z-index: 9990;
+}
+
+
+
+
+/* ---------------- BLOCK 0 -> Modification commune  ---------------- */
+h1 { /* titre du menu */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* changement de la police */
+    color: #0175CF; /* changement de la couleur du texte */
+    text-shadow: 2px 1px 1px #0A5CA6; /* ajoute une ombre */
+}
+
+.space /* ajoute une espace entre le premier block et le haut de la page -> essentiel à cause du menu stiky */
+    {
+    height: 75px;
+}
+
+.titreH2 {
+    text-align: center; /* Met les titres balisé au centre */
+}
+
+.lien {
+    display: flex;
+    justify-content: center;
+}
+
+.lien img /* modifie les images de la division '.img' */
+    {
+    height: 100px;
+}
+
+
+/* ---------------- BLOCK 1 -> Reseaux sociaux ---------------- */
+.reseaux {
+    display: flex;
+    margin: 5px; /* Met une marge extérieur de 5 pixel */
+    flex-direction: column; /* Fait en sorte que les images soient alligné horizontalement */
+    background-color: rgba(149, 149, 149, 0.388); /* Met une couleur de fond */ 
+}
+
+/* ---------------- BLOCK 2 -> Liens developpement  ---------------- */
+
+.developpement {
+    display: flex;
+    margin: 5px; /* Met une marge extérieur de 5 pixel */
+    margin-top: 1%; /* Met une marge au dessus du bloc de 1% */
+    flex-direction: column; /* affiche les ellement en colone */
+    background-color: rgba(149, 149, 149, 0.388); /* Met une couleur de fond */
+}
+
+.lien div /* Modification des listes de lien */
+    {
+    display: flex;
+    width: 100%; /* Fait en sorte que la division balisé par 'lien' prenne toute la place horizontalement */
+    justify-content: space-around; /* Fait en sorte que les elément dans la division soit dispaché sur la division */
+}
+
+
+/* &#&#&#&# Liste numéroté &#&#&#&# */
+/* Créateur -> https://www.alsacreations.com/article/lire/1210-donnez-du-style-a-vos-listes.html */
+ol {
+    counter-reset: repas;
+}
+
+/* on initialise et nomme un compteur */
+li {
+    list-style-type: none;
+    counter-increment: repas; /* on incrémente le compteur à chaque nouveau li */
+    margin-bottom: 10px;
+}
+
+li:before {
+    content: counter(repas); /* on affiche le compteur */
+    padding: 0 15px 5px;
+    margin-right: 8px;
+    vertical-align: top;
+    background: #678;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+    font-weight: bold;
+    font-size: 0.8em;
+    color: white;
+}
+
+/* &#&#&#&# fin de la liste &#&#&#&# */

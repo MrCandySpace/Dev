@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Page d'accueil</title>
+</head>
+<!-- Images télécharger depuis le site : https://icones8.fr/ -->
+<body>
+    <div class="corp">
+        <!-- ------------------------------------------------------------------------------------------------------------------- -->
+        <div class="menu">
+            <h1>Liens</h1>
+            <a class="bouttonmenu" href=""><img src="/img/icons8-menu-arrondi-96.png" style="height: 50px;"></a>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------------------- -->
+        <div class="space"></div>
+        <!-- ------------------------------------------------------------------------------------------------------------------- -->
+        <div class="reseaux" id="reseaux">
+            <h2 class="titreH2">Réseaux sociaux</h2>
+            <div class="lien"> <!-- Ajouts des icones relier au lien internet -->
+                <a href="https://discord.com" target="_blank"><img src="/img/icons8-discorde-480.png" alt=""></a>
+                <a href="https://instagram.com" target="_blank"><img src="/img/icons8-instagram-480.png" alt=""></a>
+                <a href="https://youtube.com" target="_blank"><img src="/img/icons8-lecture-de-youtube-480.png"></a>
+                <a href="https://linkedin.com" target="_blank"><img src="/img/icons8-linkedin-480.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------------------------------------------------------------------------- -->
+        <div class="developpement">
+            <!-- Bloc pour les liens de développement-->
+            <div class="dev" id="dev">
+                <!-- Division -->
+                <h2 class="titreH2">Développement</h2>
+                <div class="lien">
+                    <!--          <li><a href=""></a></li>          Pour ajouter un lien                 -->
+                    <!--
+                        Dans cette division : toutes les catégories sont mis dans des divisions avec un titre
+                        Suivi de 'ul' puis chaque lien dans une balise 'li'
+
+                        ce qui fait -> div - ul - h3 - li - a - /a - /li - /ul - /div 
+                    -->
+                    <div>
+                        <ul>
+                            <h3>Aide général</h3>
+                            <li><a href="https://grafikart.fr/tutoriels">Grafikart</a></li>
+                            <li><a href="https://unsplash.com/">Image libre de droit</a></li>
+                            <li><a href="https://www.blogduwebdesign.com/">Web design</a></li>
+                            <li><a href="https://github.com/public-apis/public-apis">API publique - Github</a></li>
+                            <li><a href="https://icones8.fr/icons">Icones</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h3>HTML - CSS</h3>
+                            <li><a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Bootstrap
+                                    documentation</a></li>
+                            <li><a href="https://developer.mozilla.org/fr/docs/Web/CSS/text-shadow">Ombre texte</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h3>JavaScript</h3>
+                            <li><a
+                                    href="https://developer.mozilla.org/fr/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents#apprentissage_actif_manipulations_basiques_du_dom">JS
+                                    - DOM</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------------------------------------------------------------------------------------------------------- -->
+    </div>
+
+
+    <footer>
+        <div class="pied-de-page">
+            <img src="/img/icons8-copyright-96.png" style="height: 15px;">Site réalisé par Candy
+        </div>
+    </footer>
+
+</body>
+
+</html>
