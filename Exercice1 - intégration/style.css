@@ -55,6 +55,9 @@ h2 /* modification des titre des sections */
 .sec1 /* section 1 > image de fond et slogan */
 {
     background-image: url(img/fond.webp);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
     min-height: 800px;
 }
 
