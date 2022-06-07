@@ -1,0 +1,153 @@
+<h1>Php</h1>
+<?php
+
+echo "Hello world";
+
+$nom = "Candy"; 
+$prenom = "Space";
+
+echo "</br>";
+
+echo "Salut à toi " .$nom." ".$prenom;
+echo "</br>";
+echo "Salut à toi $nom $prenom";
+
+$nombre = 22; 
+$deci = 12.5;
+
+var_dump($nombre, $deci, $nom);
+
+$equipe = ["pinpin","El gato", "jean martre"];
+$equipe[] = "motclé";
+
+print_r($equipe);
+
+$joueur1 = [
+    "nom" => "Candy", 
+    "prenom" => "Space", 
+    "score" => 821,
+    "num" => 1
+];
+echo "</br>";
+print_r($joueur1);
+
+$joueur2 = [
+    "nom" => "Jack", 
+    "prenom" => "Sparow", 
+    "score" => 175,
+    "num" => 2
+];
+echo "</br>";
+print_r($joueur2);
+
+$joueur3 = [
+    "nom" => "Monsieur", 
+    "prenom" => "Poulpe", 
+    "score" => 1274,
+    "num" => 3
+];
+echo "</br>";
+print_r($joueur3);
+echo "</br>";echo "</br>";
+$bleu = [$joueur1,$joueur2];
+
+print_r($bleu);
+echo "</br>";echo "</br>";
+echo "Bienvue à toi".$joueur1['nom'];
+
+echo "</br>";echo "</br>";
+
+$joueurs = [$joueur1,$joueur2,$joueur3];
+foreach($bleu as $joueurs){
+    echo "--------- Joueur ".$joueurs['num']." ---------</br>";
+    echo "Nom : ".$joueurs['nom']."</br>";
+    echo "Score : ".$joueurs['score']."</br></br>";
+}
+
+
+
+?>
+
+
+
+
+<h1>Php</h1>
+<?php
+
+echo "Hello world";
+
+$nom = "Candy"; 
+$prenom = "Space";
+
+echo "</br>";
+
+echo "Salut à toi " .$nom." ".$prenom;
+echo "</br>";
+echo "Salut à toi $nom $prenom";
+
+$nombre = 22; 
+$deci = 12.5;
+
+var_dump($nombre, $deci, $nom);
+
+$equipe = ["pinpin","El gato", "jean martre"];
+$equipe[] = "motclé";
+
+print_r($equipe);
+
+$joueur1 = [
+    "nom" => "Candy", 
+    "prenom" => "Space", 
+    "score" => 821,
+    "num" => 1
+];
+echo "</br>";
+print_r($joueur1);
+
+$joueur2 = [
+    "nom" => "Jack", 
+    "prenom" => "Sparow", 
+    "score" => 175,
+    "num" => 2
+];
+echo "</br>";
+print_r($joueur2);
+
+$joueur3 = [
+    "nom" => "Monsieur", 
+    "prenom" => "Poulpe", 
+    "score" => 1274,
+    "num" => 3
+];
+echo "</br>";
+print_r($joueur3);
+echo "</br>";echo "</br>";
+$bleu = [$joueur1,$joueur2,$joueur3];
+
+print_r($bleu);
+echo "</br>";echo "</br>";
+echo "Bienvue à toi".$joueur1['nom'];
+
+echo "</br>";echo "</br>";
+
+$joueurs = [$joueur1,$joueur2,$joueur3];
+foreach($bleu as $joueurs){
+    echo "--------- Joueur ".$joueurs['num']." ---------</br>";
+    echo "Nom : ".$joueurs['nom']."</br>";
+    echo "Score : ".$joueurs['score']."</br></br>";
+};
+
+
+function helloplayer (array $playyyer){
+    return "Salut à toi ".$playyyer['nom']." ".$playyyer['prenom'];
+};
+
+foreach($bleu as $joueurs){
+    echo helloplayer($joueurs);C:\wamp64\www\PHPed\index.php
+C:\wamp64\www\PHPed\game.txt
+    echo "</br>";
+};
+
+
+
+?>  
