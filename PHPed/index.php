@@ -29,6 +29,9 @@
                     case "connexion":
                         include("pages/connexion.php");
                         break;
+                    case "contactForm":
+                        include("controllers/contactForm.php");
+                        break;
                     default:
                         include("pages/404.php");
                         break;
@@ -40,6 +43,7 @@
         </main>
     </div>
 </section>
+
 
 
 <!-- JavaScript Bundle with Popper -->

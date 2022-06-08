@@ -1,9 +1,35 @@
-#menu div{
+/* ___________________ Général ___________________ */
+body {
+    background-repeat: no-repeat;
+}
+
+#menu div {
     margin-top: 20px;
 }
 
-
-h1{
+h1 {
     text-align: center;
 }
 
+
+
+/* ___________________ Page 404 ___________________ */
+#section-404 {
+    width: 100%;
+    display: flex;
+
+}
+
+#section-404 div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.div-404 {
+    display: flex;
+}
+
+.div-404 img {
+    width: 40%;
+
+}
