@@ -9,6 +9,7 @@
 if($_POST['object'] && $_POST['email']){
     $object = $_POST['object'];
     $email = $_POST['email'];
+    $name = $_POST['name'];
     include("pages/contactFormConfirmation.php");
 }
 
