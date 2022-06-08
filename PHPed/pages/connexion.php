@@ -11,5 +11,5 @@
         <label for="floatingPassword">Password</label>
     </div>
     <br>
-    <button type="submit" class="btn btn-outline-primary col-5 col-md-1">Envoyer</button>
+    <button type="submit" class="btn btn-outline-dark col-5 col-md-1">Envoyer</button>
 </form>

@@ -1,5 +1,6 @@
 /* ___________________ Général ___________________ */
 body {
+    background-image: linear-gradient(to right bottom, #599bff, #00bfff, #00ddff, #00f3bb, #00ff4d);
     background-repeat: no-repeat;
 }
 
