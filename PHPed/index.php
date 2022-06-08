@@ -13,6 +13,9 @@
 
 <section id="menu">
     <div>
+        <?php include("layout/menu.php") ?>
+    </div>
+    <div>
         <main>
             <?php
             if (isset($_GET['page'])) {
@@ -35,9 +38,6 @@
             }
             ?>
         </main>
-    </div>
-    <div>
-        <?php include("layout/menu.php") ?>
     </div>
 </section>
 
