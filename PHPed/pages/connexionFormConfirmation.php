@@ -6,6 +6,6 @@
 <section class="section-xxConfirm">
     <div>
         Email : <?= $user ?><br>
-        Password : ••••••••••<br>
+        Password : ••••••••••<br> <!-- C'est pas de la triche -->
     </div>
 </section>

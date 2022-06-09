@@ -19,6 +19,9 @@ if (isset($_GET['page'])) {
             break;
         case "deconnexionForm":
             include("controllers/deconnexionForm.php");
+        case "utilisateurs":
+            include("controllers/usersController.php");
+            break;
         default:
             include("pages/404.php");
             break;
