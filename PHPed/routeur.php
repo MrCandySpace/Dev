@@ -11,12 +11,14 @@ if (isset($_GET['page'])) {
         case "connexion":
             include("pages/connexion.php");
             break;
+            /*
         case "createUser":
             include("controllers/createUser.php");
             break;
         case "deleteUser":
             include("controllers/deleteUser.php");
             break;
+            */
         case "contactForm":
             include("controllers/contactForm.php");
             break;

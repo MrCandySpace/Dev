@@ -22,7 +22,7 @@
 
 <br><br>
 <h1>Crée un compte</h1>
-<form action="index.php?page=createUser" method="post" class="row flex-column align-items-center">
+<form action="index.php?page=utilisateurs&action=create" method="post" class="row flex-column align-items-center">
     <div class="form-floating mb-2 col-8 col-md-6">
         <!-- type="email" pour mettre seulement des emails -->
         <input name="user" type="text" class="form-control" id="login" placeholder="name@example.com">

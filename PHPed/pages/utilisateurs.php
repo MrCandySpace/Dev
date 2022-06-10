@@ -14,7 +14,8 @@
         foreach ($users as $users) {
             echo "<tr>";
             echo "<td>" . $users['name'] . "</td><td>" . $users['password'] . "</td>";
-            echo "<td> <a href='index.php?page=deleteUser&id=".$users['id']."'>Delete</a> </td>";
+            // echo "<td> <a href='index.php?page=deleteUser&id=".$users['id']."'>Delete</a> </td>";
+            echo "<td> <a href='index.php?page=utilisateurs&action=delete&id=".$users['id']."'>Delete</a> </td>";
             echo "</tr>";
         }
         ?>
