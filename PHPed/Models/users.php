@@ -24,6 +24,22 @@ function getUsers()
     return $reponse->fetchAll();
 }
 
+/**
+ * Retourne un utilisateur grâce à son ID
+ */
+function getUserByID(int $id)
+{
+    $bdd = connection();
+    $sql = "SELECT * 
+        FROM `users` 
+        WHERE id = ?";
+    // Sécurisation du code -> anti-injection 
+    $requete = $bdd->prepare($sql); //préparation de la requête
+    $requete->execute([$id]); //execution de la requête en passant 2 paramètres
+    $data = $requete->fetchAll();
+    return $data[0];
+}
+
 
 /**
  * Retourne un utilisateur suivant son login et son mot de passe 
@@ -66,7 +82,7 @@ function createUser(string $name, string $pwd)
 {
     $bdd = connection();
     $sql = "INSERT INTO users (name,password)
-    VALUES(?,?)" ;
+    VALUES(?,?)";
     // Sécurisation du code -> anti-injection 
     $requete = $bdd->prepare($sql); //préparation de la requête
     return $requete->execute([$name, $pwd]); //execution de la requête en passant 2 paramètres
@@ -82,4 +98,18 @@ function deleteUser(int $id)
     // Sécurisation du code -> anti-injection 
     $requete = $bdd->prepare($sql); //préparation de la requête
     return $requete->execute([$id]); //execution de la requête en passant 2 paramètres
+}
+
+/**
+ * Permet de modifier un utilisateur 
+ */
+
+function updateUser(int $id, string $name, string $pwd)
+{
+    $bdd = connection();
+    $sql = "UPDATE users SET name=?,password=? WHERE id=?";
+    // Sécurisation du code -> anti-injection 
+    $requete = $bdd->prepare($sql); //préparation de la requête
+    // Execution de la requête en passant 3 paramètres 
+    return $requete->execute([$name, $pwd, $id]); //execution de la requête en passant 2 paramètres
 }
