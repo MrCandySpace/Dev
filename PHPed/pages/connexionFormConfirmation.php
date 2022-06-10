@@ -5,7 +5,7 @@
 
 <section class="section-xxConfirm">
     <div>
-        Email : <?= $user ?><br>
+        ID : <?= $_SESSION['user'] ?><br>
         Password : ••••••••••<br> <!-- C'est pas de la triche -->
     </div>
 </section>
