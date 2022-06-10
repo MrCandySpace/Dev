@@ -14,18 +14,7 @@ function login($login, $pwd)
     }
 }*/
 
-function loginByUser(string $login, string $pwd)
-{
-    $user = getUsersByLogin($login, $pwd); //Récupération des informatinos depuis le model user
-    // var_dump($user[0]['name']); 
-    if (isset($user[0])) {
-        $_SESSION['user'] = $user[0]['name'];
-        setcookie('user', $user[0]['name']);
-        return true;
-    } else {
-        return false;
-    }
-}
+
 
 
 loginByUser($_POST['user'], $_POST['pwd']);

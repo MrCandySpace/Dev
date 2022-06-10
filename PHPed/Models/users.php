@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Se connecte à la bdd
+ */
 function connection()
 {
     $user = "root"; //utilisateur de MySQL
@@ -35,8 +38,48 @@ function getUsersByLogin($login, $pwd)
 
     // Sécurisation du code -> anti-injection 
     $requete = $bdd->prepare($sql); //préparation de la requête
-    $requete -> execute([$login,$pwd]); //execution de la requête en passant 2 paramètres
-    
+    $requete->execute([$login, $pwd]); //execution de la requête en passant 2 paramètres
+
     return $requete->fetchAll();
 }
 
+/**
+ * Permet de s'identifier avec les logins de la bdd
+ */
+function loginByUser(string $login, string $pwd)
+{
+    $user = getUsersByLogin($login, $pwd); //Récupération des informatinos depuis le model user
+    // var_dump($user[0]['name']); 
+    if (isset($user[0])) {
+        $_SESSION['user'] = $user[0]['name'];
+        setcookie('user', $user[0]['name']);
+        return true;
+    } else {
+        return false;
+    }
+}
+
+/**
+ * Permet de crée un nouvel utilisateur dans la bdd
+ */
+function createUser(string $name, string $pwd)
+{
+    $bdd = connection();
+    $sql = "INSERT INTO users (name,password)
+    VALUES(?,?)" ;
+    // Sécurisation du code -> anti-injection 
+    $requete = $bdd->prepare($sql); //préparation de la requête
+    return $requete->execute([$name, $pwd]); //execution de la requête en passant 2 paramètres
+}
+
+/**
+ * Permet de supprimé un utilisateur dans la bdd 
+ */
+function deleteUser(int $id)
+{
+    $bdd = connection();
+    $sql = "DELETE FROM users WHERE id = ?";
+    // Sécurisation du code -> anti-injection 
+    $requete = $bdd->prepare($sql); //préparation de la requête
+    return $requete->execute([$id]); //execution de la requête en passant 2 paramètres
+}

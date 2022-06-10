@@ -5,6 +5,7 @@
         <tr>
             <th>Nom d'utilisateur</th>
             <th>Mot de passe</th>
+            <th>Suppression</th>
         </tr>
     </thead>
     <tbody>
@@ -12,7 +13,8 @@
         // print_r($users);
         foreach ($users as $users) {
             echo "<tr>";
-            echo "<td>" . $users['name'] ."</td><td>". $users['password'] . "</td>";
+            echo "<td>" . $users['name'] . "</td><td>" . $users['password'] . "</td>";
+            echo "<td> <a href='index.php?page=deleteUser&id=".$users['id']."'>Delete</a> </td>";
             echo "</tr>";
         }
         ?>
