@@ -11,6 +11,10 @@ class compteEpargne extends compte
         parent::__construct($solde,$nom,$prenom);
     }
 
+    public function getNom()
+    {
+        return $this->nom;
+    }
 
     /**
      * Dépot d'argent 

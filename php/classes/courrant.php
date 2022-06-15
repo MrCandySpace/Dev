@@ -27,6 +27,11 @@ class compteCourrant extends compte
     }
 
 
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
     /**
      * Retrait d'argent dans la limite du découvert autorisé
      * @param float $montant | montant du retrait
