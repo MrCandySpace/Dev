@@ -1,0 +1,108 @@
+/* ------------------------------------------
+ ______              ___                _    
+|_   _ `.          .' ..]              / |_  
+  | | `. \ .---.  _| |_  ,--.  __   _ `| |-' 
+  | |  | |/ /__\\'-| |-'`'_\ :[  | | | | |   
+ _| |_.' /| \__.,  | |  // | |,| \_/ |,| |,  
+|______.'  '.__.' [___] \'-;__/'.__.'_/\__/  
+                                             
+------------------------------------------ */
+
+body {
+    font-family: 'Major Mono Display', monospace;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+/* ------------------------------------------
+ _____  ______    
+|_   _||_   _ `.  
+  | |    | | `. \ 
+  | |    | |  | | 
+ _| |_  _| |_.' / 
+|_____||______.'  
+                  
+------------------------------------------ */
+
+#navbar {
+    padding: 2%;
+}
+
+#erreur {
+    font-family: 'Megrim', cursive;
+    display: flex;
+    /* height: 200px; */
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+#competenceSection {
+    border: 2px solid rgba(28, 110, 164, 0.5);
+    border-radius: 20px;
+    padding: 1%;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Paramétrage de la taille des images */
+#competenceSection img {
+    height: 1.5em;
+}
+
+#compt_block {
+    background-color: red;
+}
+
+/* ------------------------------------------
+   ______  __                        
+ .' ___  |[  |                       
+/ .'   \_| | |  ,--.   .--.   .--.   
+| |        | | `'_\ : ( (`\] ( (`\]  
+\ `.___.'\ | | // | |, `'.'.  `'.'.  
+ `.____ .'[___]\'-;__/[\__) )[\__) ) 
+                                     
+------------------------------------------ */
+
+.compt_pro {
+    border: 2px solid rgba(28, 110, 164, 0.5);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.compt_autres {
+    border: 2px solid rgba(28, 110, 164, 0.5);
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.compt_titre {
+    border-bottom: 2px solid rgba(28, 110, 164, 0.5);
+}
+
+.compt_space {
+    margin: 1%;
+}
+
+/* Effet d'annimation sur les cases du tableau de compétences lors du survol de la souris */
+tr:hover {
+    transform: scale(1);
+    transition: .5s;
+    transition-timing-function: linear;
+    transition-delay: .1s;
+    /* background-color: hsla(0, 0%, 29%, 0.5); */
+    background-image: linear-gradient(to right, #0066ff, #fa3bd3, #ff4f7f, #ffad22, #f7ff00);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+/* Permet de mettre en noir et blanc l'élément (utilisé pour les étoiles de compétences) */
+.grayscale {
+    filter: grayscale(100%);
+}
